@@ -6,6 +6,7 @@ import Partner from './components/Partner/Partner'
 import Booking from './pages/Booking/Booking'
 import Dishes from './pages/Dishes/Dishes'
 import Ambience from './pages/Ambience/Ambience'
+import Delivery from './pages/Delivery/Delivery'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <Booking />
     <Dishes />
     <Ambience />
+    <Delivery />
     <Footer />
     </>
   )
