@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Partner from './components/Partner/Partner'
 import Booking from './pages/Booking/Booking'
 import Dishes from './pages/Dishes/Dishes'
+import Ambience from './pages/Ambience/Ambience'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Partner />
     <Booking />
     <Dishes />
+    <Ambience />
     <Footer />
     </>
   )
