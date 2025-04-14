@@ -4,6 +4,7 @@ import Welcome from './components/Welcome/Welcome'
 import Footer from './components/Footer/Footer'
 import Partner from './components/Partner/Partner'
 import Booking from './pages/Booking/Booking'
+import Dishes from './pages/Dishes/Dishes'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Welcome />
     <Partner />
     <Booking />
+    <Dishes />
     <Footer />
     </>
   )
