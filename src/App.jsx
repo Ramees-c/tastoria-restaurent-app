@@ -1,23 +1,28 @@
 import React from 'react'
 import Header from './components/Header/Header'
-import Welcome from './components/Welcome/Welcome'
 import Footer from './components/Footer/Footer'
-import Partner from './components/Partner/Partner'
-import Booking from './pages/Booking/Booking'
+
+import {Routes, Route} from "react-router-dom"
+import Home from './pages/Home/Home'
 import Dishes from './pages/Dishes/Dishes'
-import Ambience from './pages/Ambience/Ambience'
-import Delivery from './pages/Delivery/Delivery'
+import Booking from './pages/Booking/Booking'
+import About from './pages/About/About'
 
 function App() {
   return (
     <>
+    
+    
+    
     <Header />
-    <Welcome />
-    <Partner />
-    <Booking />
-    <Dishes />
-    <Ambience />
-    <Delivery />
+    <Routes>
+    
+      <Route path='/' element={<Home />} />
+      <Route path='/dishes' element={<Dishes />} />
+      <Route path='/services' element={<Booking />} />
+      <Route path='/about' element={<About />} />
+      
+    </Routes>
     <Footer />
     </>
   )

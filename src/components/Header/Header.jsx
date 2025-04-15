@@ -21,6 +21,9 @@ import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices
 import HomeIcon from "@mui/icons-material/Home";
 import ContactsIcon from "@mui/icons-material/Contacts";
 
+
+import { useNavigate } from "react-router-dom";
+
 function Header() {
   const [mobileMenu, setMobileMenu] = useState({ left: false });
 
@@ -30,6 +33,8 @@ function Header() {
     }
     setMobileMenu({...mobileMenu, [anchor]:open})
   }
+
+  const navigate = useNavigate()
 
   const list = (anchor) => (
     <Box sx={{
@@ -42,7 +47,7 @@ function Header() {
          <List>
             {
                 nav_titles.map((item, index) => (
-                    <ListItem key={index} disablePadding>
+                    <ListItem key={index} disablePadding onClick={() => navigate(item.path)}>
                         <ListItemButton>
                             <ListItemIcon>
                                 {
@@ -170,7 +175,7 @@ function Header() {
 
         <NavBarLinksBox>
           {nav_titles.map((title, index) => (
-            <NavBarLink key={index} variant="body2">
+            <NavBarLink key={index} variant="body2" onClick={() => navigate(title.path)}>
               {title.display}
             </NavBarLink>
           ))}

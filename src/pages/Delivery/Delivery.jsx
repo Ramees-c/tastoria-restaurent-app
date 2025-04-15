@@ -8,9 +8,6 @@ function Delivery() {
     const CustomBox = styled(Box)(({theme}) => ({
         padding: theme.spacing(10, 0, 10, 0),
         margin: theme.spacing(0, 2, 0, 2),
-        [theme.breakpoints.down('md')]: {
-            padding: "0",
-        }
     }))
 
     const CustomContainer = styled(Container)(({theme}) => ({
@@ -25,7 +22,8 @@ function Delivery() {
             flexDirection: 'column',
             alignItems: 'center',
             padding: theme.spacing(3, 3, 0, 3),
-            width: '90%'
+            width: '90%',
+            gap: theme.spacing(5)
         }
     }))
   return (
