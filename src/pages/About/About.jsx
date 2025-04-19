@@ -16,7 +16,7 @@ function About() {
         justifyContent: "center",
         alignItems: "center",
         padding: "40px",
-        mt: "65px",
+        mt: "95px",
         mb: "100px",
       }}
     >
