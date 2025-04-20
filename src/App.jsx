@@ -7,6 +7,7 @@ import Home from './pages/Home/Home'
 import Dishes from './pages/Dishes/Dishes'
 import Booking from './pages/Booking/Booking'
 import About from './pages/About/About'
+import PageNotFound from './pages/PageNotFound/PageNotFound'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path='/dishes' element={<Dishes />} />
       <Route path='/services' element={<Booking />} />
       <Route path='/about' element={<About />} />
+      <Route path='/*' element={<PageNotFound />} />
       
     </Routes>
     <Footer />
